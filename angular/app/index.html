@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="app-styles.css">
+</head>
+
+<body ng-app="uiRouterDemo">
+    <header>
+        <h1>Angular App</h1>
+    </header>
+
+    <div class="container">
+        <div class="navbar">
+            <a ui-sref="home" ui-sref-active="active" class="nav-link">Home</a>
+            <a ui-sref="profile.main" ui-sref-active="active" class="nav-link">Profile</a>
+        </div>
+
+        <ui-view></ui-view>
+    </div>
+</body>
+
+</html>
