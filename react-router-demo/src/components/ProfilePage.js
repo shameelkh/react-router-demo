@@ -17,11 +17,6 @@ const ProfilePage = ({ match }) => {
                 </NavLink>
             </div>
 
-            {/* TODO: Add Routing for main and settings */}
-            <Switch>
-                <Route exact path={`${match.url}`} component={ProfileMain} />
-                <Route exact path={`${match.url}/settings`} component={ProfileSettings} />
-            </Switch>
         </div>
     )
 }
