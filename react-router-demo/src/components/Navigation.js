@@ -1,10 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
     return (
         <div class="navbar">
-            <a ui-sref="home" ui-sref-active="active" class="nav-link">Home</a>
-            <a ui-sref="profile.main" ui-sref-active="active" class="nav-link">Profile</a>
+            <NavLink to={'/'} exact={true} className="nav-link" activeClassName="active">
+                Home
+            </NavLink>
+            <NavLink to={'/profile'} className="nav-link" activeClassName="active">
+                Profile
+            </NavLink>
         </div>
     )
 }
